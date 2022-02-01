@@ -1,5 +1,8 @@
 # vrroom
 実行ファイルは
+
 pythonでred2.pyで手の位置認識をしてその位置をもとに視界を回転させるための制御信号を作り、unityにシリアル通信.
+
 uinty側でConstellation/assets/scripts/python.csでシリアル通信を受け取り、arduinoに送る.DrawConstellation.csで星座描いて、視界に入ってる星座名を表示する.
+
 arduino側でservo2/servo2.inoでunityからの回転信号をモーター2つにそれぞれ送る.
